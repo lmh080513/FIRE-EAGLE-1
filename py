@@ -18,3 +18,6 @@ async def on_message(message):
         member = discord.utils.get(client.get_all_members(), id=message.content[4:22])
         await client.send_message(member, "FIRE EAGLE관리자 답변 : " + message.content[23:])
 
+
+access_token = os.environ["BOT TOKEN"]
+Client.run(access_token)
